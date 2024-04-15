@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yo adopto</title>
+    <link rel="stylesheet" href="/css/styleLogin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!--Header fijo-->
+    <div class="header">
+        <div class="yo-adopto">
+
+            YoAdopto♥
+        </div>
+        <div class="ContenedorNavegacion">
+
+            <span class="ElementoNavegacion">
+                <a href="Historias" class="Nav">Historias</a>
+            </span>
+            <span class="ElementoNavegacion">
+                <a href="Procedimientos" class="Nav">Procedimientos</a>
+            </span>
+            <span class="ElementoNavegacion">
+                <a href="Contacto" class="Nav">Contacto</a>
+            </span>
+            <div class="ElementoNavegacion">
+                <a href="Perfil" class="Nav">Mi Perfil</a>
+            </div>
+            <div class="ElementoNavegacion">
+                <a href="Testimonios" class="Nav">Testimonios</a>
+            </div>
+            <div class="cart-button">
+                <span class="identificarme">
+                    <a href="" class="Boton">Identificarme</a>
+                </span>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="page-heading">
+        <span class="almas">
+            Identificate
+        </span>
+
+        <div class="divider">
+        </div>
+        <div class="contenedor">
+            <div class="div1">
+
+                <form action="/Ingreso" method="post">
+                    <strong>Ingresa!</strong>
+                    <!-- Campo de correo electrónico -->
+                    <div class="form-group">
+
+                        <br><br>
+                        <input type="email" class="form-control" id="correo" name="correo" placeholder="Tu correo">
+                    </div>
+                    <!-- Campo de password -->
+                    <div class="form-group">
+
+                        <br><br>
+                        <input type="password" class="form-control" id="pass" name="pass" placeholder="Ingresa tu clave"
+                            name="name">
+                    </div>
+
+                    <!-- Botón de envío -->
+                    <br>
+                    <button type="submit" class="btn btn-primary botonesLogin">Ingresar</button>
+                    <br>
+                    <button class="btn btn-primary botonesLogin" id="MostrarRegistro"
+                        onclick="mostrarRegistro()">¿Necesitas registrarte? </button>
+                </form>
+
+            </div>
+
+            <div class="div2" id="divRegistro">
+                <form action="/Registro" method="post">
+                    <!-- Campo de correo electrónico -->
+                    <strong>Registrate!</strong>
+                    <div class="form-group">
+
+                        <br><br>
+                        <input type="email" class="form-control" id="correo" name="correo" placeholder="Tu correo"
+                            required>
+                    </div>
+                    <!-- Campo de password -->
+                    <div class="form-group">
+
+                        <br><br>
+                        <input type="password" class="form-control" id="pass" name="pass" placeholder="Crea una clave"
+                            required>
+                    </div>
+                    <!-- Campo de roles con radioButons -->
+                    <div class="form-group">
+                        <input type="radio" id="visualizador" name="rol" value="Visualizador" checked>
+                        <label for="visualizador">Visualizador</label><br>
+                        <input type="radio" id="administrador" name="rol" value="Administrador">
+                        <label for="administrador">Administrador</label>
+
+                    </div>
+
+                    <!-- Botón de envío -->
+                    <br>
+                    <button type="submit" class="btn btn-primary botonesLogin">Registrar</button>
+                    <br>
+
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+
+
+    </div>
+    </div>
+
+
+    <!--Footer fijo-->
+    <footer>
+        <div class="ClassFooter">
+            <div class="ContenedorFooter">
+                <div class="nuestros-principios">
+                    NUESTROS PRINCIPIOS
+                </div>
+                <span
+                    class="creemos-firmemente-que-cada-mascota-merece-un-hogar-lleno-de-amor-y-cuidado-y-cada-hogar-merece-la-alegra-que-una-mascota-trae-consigo">
+                    Creemos firmemente que cada mascota merece un hogar lleno de amor y cuidado, y cada hogar merece la
+                    alegría
+                    que una mascota trae consigo.
+                </span>
+            </div>
+            <span class="developed-by-devfigma-org">
+                developed by DEVFIGMA.ORG
+            </span>
+        </div>
+    </footer>
+    <script src="/js/scriptLogin.js"></script>
+
+</body>
+
+</html>
