@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yo adopto</title>
+  <link rel="stylesheet" href="/css/stylePerfil.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!--Header fijo-->
+  <div class="header">
+    <div class="yo-adopto">
+      YoAdopto♥
+    </div>
+    <div class="ContenedorNavegacion">
+
+      <span class="ElementoNavegacion">
+        <a href="Historias" class="Nav">Historias</a>
+      </span>
+      <span class="ElementoNavegacion">
+        <a href="Procedimientos" class="Nav">Procedimientos</a>
+      </span>
+      <span class="ElementoNavegacion">
+        <a href="Contacto" class="Nav">Contacto</a>
+      </span>
+      <div class="ElementoNavegacion">
+        <a href="Perfil" class="Nav">Mi Perfil</a>
+      </div>
+      <div class="ElementoNavegacion">
+        <a href="Testimonios" class="Nav">Testimonios</a>
+      </div>
+      <div class="cart-button">
+        <span class="identificarme">
+          <a href="logout" class="Boton">Cerrrar sesión</a>
+        </span>
+      </div>
+
+    </div>
+  </div>
+  <!--Procedimientos fijo-->
+  <div class="page-heading">
+    <span class="almas">
+      Perfil
+    </span>
+    
+    <div class="divider">
+    </div>
+
+    <div class="container-2">
+      <div class="container-12">
+       
+        <div class="Etiqueta1">
+          <div class="foto8">
+          </div>
+          <div class="container-1">
+            <div class="container-17">
+              <strong id="userDesdeAPI">
+                Usuario:
+              </strong>
+            </div>
+            <span class="Resumen">
+             <h3>Bienvenido, tu sesion está abierta</h3>
+            </span>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+  </div>
+  <!--Footer fijo-->
+  <footer>
+    <div class="ClassFooter">
+      <div class="ContenedorFooter">
+        <div class="nuestros-principios">
+          NUESTROS PRINCIPIOS
+        </div>
+        <span
+          class="creemos-firmemente-que-cada-mascota-merece-un-hogar-lleno-de-amor-y-cuidado-y-cada-hogar-merece-la-alegra-que-una-mascota-trae-consigo">
+          Creemos firmemente que cada mascota merece un hogar lleno de amor y cuidado, y cada hogar merece la alegría
+          que una mascota trae consigo.
+        </span>
+      </div>
+      <span class="developed-by-devfigma-org">
+        developed by DEVFIGMA.ORG
+      </span>
+    </div>
+  </footer>
+  <script>
+    fetch('/sessionData')
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById('userDesdeAPI').textContent = data.user;
+        })
+        .catch(error => console.error('Error:', error));
+</script>
+
+</body>
+
+</html>
