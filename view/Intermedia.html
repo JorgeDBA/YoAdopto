@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Redirección</title>
+    <script type="text/javascript">
+        // Muestra el mensaje y redirige después de 5 segundos
+        window.onload = function() {
+            alert('No has iniciado sesión, serás enviado al login');
+            setTimeout(function() {
+                window.location.href = '/login';
+            }, 4000); // Ajusta el tiempo según necesites
+        };
+    </script>
+</head>
+<body>
+    <p>Si no eres redirigido automáticamente, <a href="/login">haz clic aquí para iniciar sesión.</a></p>
+</body>
+</html>
